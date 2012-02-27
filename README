@@ -1,0 +1,14 @@
+## Usage
+
+bundle install
+
+rake db:create
+
+rake db:migrate
+
+export RUBYLIB=~/code/ruby_activerecord:$RUBYLIB
+
+### Open irb and type
+
+require "ruby_activerecord"
+puts Product.count
